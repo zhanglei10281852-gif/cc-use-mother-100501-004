@@ -5,8 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "emergency-connectivity"
 version = "0.1.0"
-description = "应急通信保障编排基础领域契约"
+description = "应急通信保障编排服务：能力发布、规则裁决、重评估、到期回收与全程可解释"
 requires-python = ">=3.11"
+
+[project.scripts]
+emergency-connectivity = "emergency_connectivity.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
